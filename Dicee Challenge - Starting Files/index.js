@@ -45,3 +45,7 @@ var randomNumber2 = Math.random() * 6 + 1;
 randomNumber2 = Math.floor(randomNumber2);
 changeImage1(randomNumber1);
 changeImage2(randomNumber2);
+
+if (randomNumber1 > randomNumber2) document.querySelector("h1").textContent = "1 wins!🚩";
+if (randomNumber2 > randomNumber1) document.querySelector("h1").textContent = "2 wins!🚩";
+if (randomNumber1 == randomNumber2) document.querySelector("h1").textContent = "draw!";
